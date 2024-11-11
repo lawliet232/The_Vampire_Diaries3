@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="theword.css">
+    
+    <!-- Incluir Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <title>personajes</title>
+</head>
+<body>
+    <h1 class="titulo">Los Personajes de The Vampire Diaries</h1>
+
+    <!-- Contenedor Swiper -->
+    <div class="swiper-container">
+        <!-- Contenedor de los slides -->
+        <div class="swiper-wrapper">
+            <!-- Cada slide es un personaje -->
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal1')">Elena Gilbert</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal3')">Stefan Salvatore</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal2')">Damon Salvatore</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal4')">Bonnie Bennett</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal5')">Caroline Forbes</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal6')">Jeremy Gilbert</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal7')">Alaric Saltzman</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal8')">Katherine Pierce</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal9')">Klaus Mikaelson</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal10')">Elijah Mikaelson</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal11')">Rebekah Mikaelson</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal12')">Tyler Lockwood</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal13')">Matt Donovan</span>
+            </div>
+            <div class="swiper-slide">
+                <span class="character-name" onclick="openModal('modal14')">Enzo St. John</span>
+            </div>
+            
+        </div>
+    </div>
+        
+        <!-- Controles de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    
+    <!-- Modales (ejemplo de modal para Elena, puedes replicar para los demás personajes) -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <div class="personaje-container">
+                <!-- Imagen del personaje, fuera del div .personaje -->
+                <img src="imagenes/personajes/descarga.jfif" alt="Elena Gilbert" class="personaje-img">
+                
+                <!-- Contenedor del texto con la clase .personaje -->
+                <div class="personaje">
+                    <h2>Elena Gilbert</h2>
+                    <p>La protagonista humana en el centro del triángulo amoroso entre los hermanos Salvatore. Actriz: Nina Dobrev.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/DamonSalvatore.jfif" alt="Damon Salvatore" class="personaje-img">
+                <div class="personaje">
+                    <h2>Damon Salvatore</h2>
+                    <p>El hermano mayor de Stefan, conocido por su actitud rebelde y amor intenso. Actor: Ian Somerhalder.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/nn.jfif" alt="Stefan Salvatore" class="personaje-img">
+                <div class="personaje">
+                    <h2>Stefan Salvatore</h2>
+                    <p>Uno de los hermanos vampiros, conocido por su naturaleza compasiva. Actuado por Paul Wesley.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/BonnieBennett.jfif" alt="Bonnie Bennett" class="personaje-img">
+                <div class="personaje">
+                    <h2>Bonnie Bennett</h2>
+                    <p>Una bruja poderosa y amiga cercana de Elena. Actriz: Kat Graham.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal5')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/CarolineForbes.jfif" alt="Caroline Forbes" class="personaje-img">
+                <div class="personaje">
+                    <h2>Caroline Forbes</h2>
+                    <p>Mejor amiga de Elena, que se convierte en vampiro. Actriz: Candice King.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal6')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/JeremyGilbert.jpg" alt="Jeremy Gilbert" class="personaje-img">
+                <div class="personaje">
+                    <h2>Jeremy Gilbert</h2>
+                    <p>El hermano menor de Elena que enfrenta su propio viaje. Actor: Steven R. McQueen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal7')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/AlaricSaltzman.jfif" alt="Alaric Saltzman" class="personaje-img">
+                <div class="personaje">
+                    <h2>Alaric Saltzman</h2>
+                    <p>El cazador de vampiros y mentor de los jóvenes en Mystic Falls. Actor: Matt Davis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal8')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/KatherinePierce.jfif" alt="Katherine Pierce" class="personaje-img">
+                <div class="personaje">
+                    <h2>Katherine Pierce</h2>
+                    <p>El doppelgänger vampiro de Elena con un oscuro pasado. Actriz: Nina Dobrev.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/KlausMikaelson.jfif" alt="Klaus Mikaelson" class="personaje-img">
+                <div class="personaje">
+                    <h2>Klaus Mikaelson</h2>
+                    <p>Un vampiro y hombre lobo híbrido original que busca el poder. Actor: Joseph Morgan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/ElijahMikaelson.jfif" alt="Elijah Mikaelson" class="personaje-img">
+                <div class="personaje">
+                    <h2>Elijah Mikaelson</h2>
+                    <p>El noble hermano original de Klaus, conocido por su honor. Actor: Daniel Gillies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal11')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/RebekahMikaelson.jfif" alt="Rebekah Mikaelson" class="personaje-img">
+                <div class="personaje">
+                    <h2>Rebekah Mikaelson</h2>
+                    <p>Hermana de Klaus, deseosa de una vida normal. Actriz: Claire Holt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal12" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal12')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/img_9182.jpg" alt="Tyler Lockwood" class="personaje-img">
+                <div class="personaje">
+                    <h2>Tyler Lockwood</h2>
+                    <p>Un hombre lobo en Mystic Falls y amor de Caroline. Actor: Michael Trevino.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal13" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal13')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/MattDonovan.jfif" alt="Matt Donovan" class="personaje-img">
+                <div class="personaje">
+                    <h2>Matt Donovan</h2>
+                    <p>Un humano honesto y amigo leal de Elena. Actor: Zach Roerig.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal14" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal14')">&times;</span>
+            <div class="personaje-container">
+                <img src="imagenes/personajes/ElijahMikaelson.jfif" alt="Enzo St. John" class="personaje-img">
+                <div class="personaje">
+                    <h2>Enzo St. John</h2>
+                    <p>Un vampiro amigo de Damon con un pasado complicado. Actor: Michael Malarkey.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+    <div class="cuestionario">
+        <h1>Cuestionario de tu Personaje Favorito</h1>
+        <form action="#" method="post">
+          <hr>
+      
+          <label for="nombre"><h2>Nombre</h2></label>
+          <input type="text" class="beep" id="nombre" name="nombre" title="Nombre" required>
+      
+          <label for="correo"><h2>Gmail</h2></label>
+          <input type="email" class="beep" id="correo" name="correo" title="Correo electrónico" required>
+      
+          <label for="opinion"><h2>Tu personaje favorito</h2></label>
+          <textarea id="opinion" name="opinion" rows="4" title="Personaje favorito"></textarea>
+      
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    <img src="imagenes/pngtree-vampire-bat-silhouette-black-png-image_9058217.png" alt="Índice" class="open-img" onclick="openSidebar()">
+      
+    <div id="sidebar" class="sidebar">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
+      <ul>
+        <li><a href="index.html#titulo">titulo</a></li>
+        <li><a href="index.html#his">Historia</a></li>
+        <li><a href="index.html#resumen">Resumen</a></li>
+        <li><a href="personajes.html">Personajes</a></li>
+        <li><a href="personajes.html#cuestionario">Cuestionario</a></li>
+        <li><a href="raza.html">tipos de razas</a></li>
+                    
+          
+          
+      </ul>
+  </div>
+
+
+
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="scripts.js"></script>
+
+    <script>
+        // Función para abrir un modal
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = "block";
+        }
+
+        // Función para cerrar el modal
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = "none";
+        }
+
+        // Configuración de Swiper
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',  // Permite que los slides tengan un tamaño adaptativo
+            spaceBetween: 10,  // Espacio entre los slides
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            loop: true,  // Habilita el loop, para que los personajes se repitan al llegar al final
+            grabCursor: true,  // Cambia el cursor para indicar que es interactivo
+        });
+    </script>
+
+</body>
+</html>
